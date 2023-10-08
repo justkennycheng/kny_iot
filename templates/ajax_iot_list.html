@@ -1,0 +1,19 @@
+{{if $iotlist!=0 }}
+{{foreach $iotlist as $key=>$row}}
+  <tr>
+    <td>{{$row[1]}}</td>
+    <td>{{$row[2]}}</td>
+    <td>
+      {{if $row[3]==0}}<span class="badge bg-danger">OFF</span>{{else}}<span class="badge bg-success">ON</span>{{/if}}
+    </td>
+    <td>
+
+      {{if $row[3]==0}}<button type="button" class="btn btn-outline-success btn-sm" onclick="switch_on_off({{$row[0]}},1)">Turn On</button>{{else}} <button type="button" class="btn btn-outline-danger btn-sm" onclick="switch_on_off({{$row[0]}},0)">Turn Off</button> {{/if}}
+
+    </td>
+  </tr>
+
+{{/foreach}} 
+{{else}}
+  <p>没有数据</p>
+{{/if}}
