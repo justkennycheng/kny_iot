@@ -3,9 +3,9 @@
 
 
 
-    define('DB_HOST', 'sdm72289646.my3w.com');
-    define('DB_USER', 'sdm72289646');
-    define('DB_PASSWORD', 'noglues9!');
-    define('DB_DB', 'sdm72289646_db');
+    define('DB_HOST', '');
+    define('DB_USER', '');
+    define('DB_PASSWORD', '');
+    define('DB_DB', '');
 //中文
 ?>
