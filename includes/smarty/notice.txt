@@ -1,0 +1,1 @@
+put source of smarty 3.1.33 or later here
